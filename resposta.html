@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,73 +11,63 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
-            width: 500px;
-            border-collapse: collapse ;
+            width: 800px;
+            border-collapse: collapse;
             position: relative;
         }
-        td, th {
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead, tfoot {
+
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
 
-        thead > tr > th {
-            position: sticky; 
+        thead>tr>th {
+            position: sticky;
             top: 0;
             background-color: gray;
 
         }
+
         td.num {
             text-align: right;
         }
-        caption {          
-            font-size: 1.5em;           
+
+        caption {
+            font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
 
         }
-        /* Efeito Zebra
-            tdoby > tr - Todo tr que é filho do tdoby
-            pseudo-classe tr:nth-child(2n) - Todo filho atualizando no intervalo de 2 linhas.
-            Outros exemplos:
-            3n - de 3 em 3 linhas;
-            2n-1 - Vai iniciar na primeira linha;
-            odd - Linhas impares;
-            even - Linhas pares;
 
-            Posso também personalisar somente as pares ou impares.
-
-            tbody > tr:nth-child(odd) {
-                background-color: blue;
-            }
-                
-            tbody > tr:nth-child(even) {
-                background-color: yellow;
-            }
-        */
-        tbody > tr:nth-child(2n) {
+        tbody>tr:nth-child(2n) {
             background-color: gray;
 
         }
     </style>
 </head>
+
 <body>
-  <h1>Tabela Grande :)</h1>  
-  <table>
-    <caption>
-        População dos Estados Brasileiros - 2024
-    </caption>
-    <thead>
-        <tr>
-            <th scope="col">Estado</th>
-            <th scope="col" style="width: 100px">População</th>
-            <th scope="col">Comandos HTML Utilizado</th>
-        </tr>
+    <h1>Tabela Grande :)</h1>
+    <table>
+        <caption>
+            População dos Estados Brasileiros - 2024
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
+                <th scope="col">Comandos HTML Utilizado</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -125,22 +116,56 @@
                 <td>Citação de fonte</td>
             </tr>
             <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">11 229 915</td>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+                <td>Texto monoespaçado</td>
             </tr>
             <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">11 229 915</td>
+                <td>Mato Grosso</td>
+                <td class="num">3.658.813</td>
+                <td>Texto pré-formatado</td>
             </tr>
             <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">11 229 915</td>
+                <td><small>Paraíba</small></td>
+                <td class="num">4.059.905</td>
+                <td><small>Texto pequeno</small></td>
+            </tr>
+            <tr>
+                <td><sup>Piauí</sup></td>
+                <td class="num">3.281.480</td>
+                <td><sup>Texto Subscrito</sup></td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+                <td>Citação em bloco</td>
+            </tr>
+            <tr>
+                <td><strong>Rio Grande do Sul</strong></td>
+                <td class="num">10.882.965</td>
+                <td><strong>Negrito</strong></td>
+            </tr>
+            <tr>
+                <td><em>Rondônia</em></td>
+                <td class="num">1.616.379</td>
+                <td><em>Itálico</em></td>
+            </tr>
+            <tr>
+                <td><mark>Roraima</mark></td>
+                <td class="num">636.707</td>
+                <td><mark>Texto Destacado</mark></td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.607.363</td>
+                <td>Abreviação</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>122.420.654</strong></td>
+                <td class="num"><strong>95.713.104</strong></td>
+                <td>Realizar a Soma das colunas</td>
 
 
 
@@ -148,7 +173,8 @@
 
 
 
-        </tbody>
+                </tbody>
     </table>
 </body>
+
 </html>
